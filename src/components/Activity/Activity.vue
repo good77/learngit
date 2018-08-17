@@ -5,17 +5,21 @@
         </div>
         <ActivitySwiper/>
         <ActivityNavbar/>
+        <div style="height: 1.4rem"> </div>
+        <bottom-bar/>
     </div>
 </template>
 
 <script>
     import ActivitySwiper from './ActivitySwiper'
     import ActivityNavbar from './ActivityNavbar'
+    import bottomBar from '../bottomBar'
     export default {
         name: "Activity",
         components:{
            ActivitySwiper,
-           ActivityNavbar
+           ActivityNavbar,
+           bottomBar
         }
     }
 </script>

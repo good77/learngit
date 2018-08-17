@@ -17,7 +17,9 @@
                       <div class="CardContent">最高立减800</div>
                   </div>
                      <div class="CheckDetail" >
-                     <mt-button type="default">查看详情</mt-button>
+                         <router-link to="/Activity/Detail" tag="span" style="display: flex">
+                             <mt-button type="default" @click="CheckDetail">查看详情</mt-button>
+                         </router-link>
                    </div>
                  </div>
                 <div class="Card">
@@ -27,7 +29,9 @@
                         <div class="CardContent">最高立减800</div>
                     </div>
                     <div class="CheckDetail" >
-                        <mt-button type="default">查看详情</mt-button>
+                        <router-link to="/Activity/Detail" tag="span" style="display: flex">
+                            <mt-button type="default" @click="CheckDetail">查看详情</mt-button>
+                        </router-link>
                     </div>
                 </div>
                 <div class="Card">
@@ -37,7 +41,9 @@
                         <div class="CardContent">最高立减800</div>
                     </div>
                     <div class="CheckDetail" >
-                        <mt-button type="default">查看详情</mt-button>
+                        <router-link to="/Activity/Detail" tag="span" style="display: flex">
+                        <mt-button type="default" @click="CheckDetail">查看详情</mt-button>
+                        </router-link>
                     </div>
                 </div>
                 <div class="Card">
@@ -47,7 +53,9 @@
                         <div class="CardContent">最高立减800</div>
                     </div>
                     <div class="CheckDetail" >
-                        <mt-button type="default">查看详情</mt-button>
+                        <router-link to="/Activity/Detail" tag="span" style="display: flex">
+                            <mt-button type="default" @click="CheckDetail">查看详情</mt-button>
+                        </router-link>
                     </div>
                 </div>                 <div class="Card">
                 <div class="CardDetail">
@@ -56,7 +64,9 @@
                     <div class="CardContent">最高立减800</div>
                 </div>
                 <div class="CheckDetail" >
-                    <mt-button type="default">查看详情</mt-button>
+                    <router-link to="/Activity/Detail" tag="span" style="display: flex">
+                        <mt-button type="default" @click="CheckDetail">查看详情</mt-button>
+                    </router-link>
                 </div>
             </div>
 
@@ -88,12 +98,16 @@
         name: "ActivityNavbar",
         data(){
             return{
-                selected : 1
+                selected : '1'
             }
         },
         mounted() {
-           this.selected = 1
         },
+        methods:{
+            CheckDetail:function () {
+                console.log("CheckDetail")
+            }
+        }
     }
 
 </script>

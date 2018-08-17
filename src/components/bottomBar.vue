@@ -1,17 +1,23 @@
 <template>
     <div class="bottomBar">
+        <router-link to="/Home" tag="div">
         <div class="item">
             <i class="iconfont icon-home"></i>
             <div>首页</div>
         </div>
+        </router-link>
+        <router-link to="/Activity" tag="div">
         <div class="item">
             <i class="iconfont icon-hot"></i>
             <div>活动</div>
         </div>
+        </router-link>
+        <router-link to="/List" tag="div">
         <div class="item">
             <i class="iconfont icon-diamond"></i>
             <div>榜单</div>
         </div>
+        </router-link>
         <div class="item">
             <i class="iconfont icon-myselected"></i>
             <div>我的</div>
