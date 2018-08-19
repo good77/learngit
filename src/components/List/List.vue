@@ -6,10 +6,10 @@
                 <mt-navbar class="TabList" v-model="selected">
                     <div class="TabName ">
                       <mt-tab-item id="1" class="mint-tab-item-label">发布榜单</mt-tab-item>
-                    </div>
+                     </div>
                     <div class="TabName">
                       <mt-tab-item id="2" class="mint-tab-item-label">接单榜单</mt-tab-item>
-                    </div>
+                     </div>
                 </mt-navbar>
             </div>
         </div>
@@ -85,6 +85,8 @@
                 Month:require('../../assets/List/Month.png'),
                 MonthShow:require('../../assets/List/MonthShow.png')
             }
+        },
+        watcher:{
         },
         methods:{
           ClickTime:function (i) {

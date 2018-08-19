@@ -5,6 +5,7 @@ import Home from './components/Home/Home'
 import Activity from './components/Activity/Activity'
 import ActivityDetail from './components/Activity/ActivityDetail'
 import List from './components/List/List'
+import HomeTabDetail from './components/Home/HomeTabDetail'
 Vue.use(Router)
 
 export default new Router({
@@ -29,6 +30,11 @@ export default new Router({
           name: 'List',
           component: List
       },
+      {
+          path:'/HomeTabDetail',
+          name:'HomeTabDetail',
+          component:HomeTabDetail
+      }
     // {
     //   path: '/about',
     //   name: 'about',
